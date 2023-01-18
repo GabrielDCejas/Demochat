@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Website Chat Megatlon</title>
+    <!-- This styling is for the canvas demonstration purposes. It is recommended 
+    that style is moved to separate file for organization in larger projects -->
+    <style>
+        html,
+        body {
+            height: 100%;
+            background-image: url('fondo.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 16px;
+            font-family: Segoe UI;
+            line-height: 20px;
+            color: whitesmoke;
+            display: table-cell;
+            padding: 13px 0px 0px 20px;
+        }
+
+        .heading {
+            background-color: black;
+            height: 50px;
+        }
+
+        .heading img {
+            width: auto;
+            /* para que se adapte al tamaño de la imagen original */
+            height: 100%;
+            /* para que se adapte al alto del div */
+            display: inline-block;
+            /* para que no ocupe toda la línea */
+            margin-right: 10px;
+            /* para agregar un margen a la derecha */
+        }
+
+        .main {
+            margin: 18px;
+            border-radius: 4px;
+        }
+
+        div[role="form"] {
+            background-color: black;
+        }
+
+        #webchat {
+            position: fixed;
+            height: calc(100% - 50px);
+            width: 100%;
+            top: 50px;
+            overflow: hidden;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="heading">
+
+            <!-- Change the h1 text to change the bot name -->
+            <!-- <h1>Chat Megatlon</h1> -->
+            <img src="logo.png" alt="logo">
+        </div>
+        <div id="webchat" role="main"></div>
+    </div>
+    <!--<<<<<<PASTE HERE THE LIVE CHAT SCRIPT>>>>>-->
+    <script id="Microsoft_Omnichannel_LCWidget"
+        src="https://oc-cdn-public-sam.azureedge.net/livechatwidget/scripts/LiveChatBootstrapper.js"
+        data-app-id="7fabdfa8-ce48-44a6-a3da-da5dfdaf130d" data-lcw-version="prod"
+        data-org-id="380392b6-49f2-40c9-a9f5-ad42d46faec2"
+        data-org-url="https://unq380392b649f240c9a9f5ad42d46fa-crm2.omnichannelengagementhub.com"></script>
+
+    <body>
+
+</html>
